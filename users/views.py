@@ -10,6 +10,7 @@ from .forms import RegisterForm, LoginForm, UpdateUserForm, UpdateProfileForm
 
 from django.shortcuts import render
 
+
 def home(request):
     return render(request, 'users/home.html')
 
@@ -96,3 +97,33 @@ def profile(request):
         profile_form = UpdateProfileForm(instance=request.user.profile)
 
     return render(request, 'users/profile.html', {'user_form': user_form, 'profile_form': profile_form})
+
+from django.shortcuts import render
+
+def generic_view(request):
+    return render(request, 'users/generic.html')
+
+def agriculture_view(request):
+    return render(request, 'users/agriculture.html')
+
+def search_view(request):
+    return render(request, 'users/search.html')
+
+from .scholarship import schol_type
+
+def search_schol(request):
+    query = request.GET.get('query', '')
+    results = {}
+
+    if query:
+        # Iterate through the main categories
+        for category, scholarships in schol_type.items():
+            for scholarship_name, scholarship_details in scholarships.items():
+                if query.lower() in scholarship_name.lower() or any(query.lower() in str(value).lower() for value in scholarship_details.values()):
+                    if category not in results:
+                        results[category] = {}
+                    results[category][scholarship_name] = scholarship_details
+    
+    return render(request, 'users/search.html', {'results': results, 'query': query})
+
+
