@@ -1,20 +1,36 @@
-{% extends "users/base.html" %}
-{% block title %} Home Page {% endblock title%}
-{% block content %}
-<h1>Dictionary Search</h1>
-<form action="" method="get">
-    <input type="text" name="query" value="{{ query }}" placeholder="Enter a word">
-    <input type="submit" value="Search">
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Scholarships</h1>
+    <form method="get" action="{% url 'search_schol' %}">
+        <input type="text" name="query" value="{{ query }}" placeholder="Enter category...">
+        <button type="submit">Search</button>
+    </form>
 
-{% if results %}
-    <h2>Results:</h2>
-    <ul>
-    {% for word, definition in results.items %}
-        <li><strong>{{ word }}</strong>: {{ definition }}</li>
-    {% endfor %}
-    </ul>
-{% elif query %}
-    <p>No results found for "{{ query }}".</p>
-{% endif %}
-{% endblock content %}
+    <div>
+        {% if results %}
+            {% for category, scholarships in results.items %}
+                <h2>{{ category|capfirst }}</h2>
+                <ul>
+                    {% for scholarship_name, scholarship_details in scholarships.items %}
+                        <li>
+                            <h3>{{ scholarship_name }}</h3>
+                            <p><strong>Description:</strong> {{ scholarship_details.desc }}</p>
+                            <p><strong>Eligibility:</strong> {{ scholarship_details.eligibility }}</p>
+                            <p><strong>Level of Study:</strong> {{ scholarship_details.lvl_study }}</p>
+                            <p><strong>Location:</strong> {{ scholarship_details.location }}</p>
+                            <p><strong>Website:</strong> <a href="{{ scholarship_details.website }}" target="_blank">{{ scholarship_details.website }}</a></p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        {% else %}
+            <p>No results found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+

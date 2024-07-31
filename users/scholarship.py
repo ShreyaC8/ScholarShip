@@ -1,5 +1,4 @@
 schol_type = {
-    # Generic Scholarships
     "generic": {
         "GREAT Scholarships": {
             "desc": "Scholarships for one-year master's courses across a range of subjects at a variety of UK universities. It covers partial or full tuition fees",
@@ -28,7 +27,6 @@ schol_type = {
             "website": "https://www.chevening.org"
         }
     },
-    # Scholarships for agriculture and veterinary medicine
     "agri_vet": {
         "Newcastle University": {
             "name": "John Pain Scholarship",

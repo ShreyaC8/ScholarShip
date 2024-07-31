@@ -112,18 +112,21 @@ def search_view(request):
 from .scholarship import schol_type
 
 def search_schol(request):
-    query = request.GET.get('query', '')
-    results = {}
+     query = request.GET.get('query', '')
+     results = {}
 
-    if query:
-        # Iterate through the main categories
-        for category, scholarships in schol_type.items():
-            for scholarship_name, scholarship_details in scholarships.items():
-                if query.lower() in scholarship_name.lower() or any(query.lower() in str(value).lower() for value in scholarship_details.values()):
+     if query:
+         # Iterate through the main categories
+         for category in schol_type.items():
+             for schol in category.items():
+                if query.lower() in category.lower():
                     if category not in results:
                         results[category] = {}
-                    results[category][scholarship_name] = scholarship_details
-    
-    return render(request, 'users/search.html', {'results': results, 'query': query})
+                    results[category] = schol_type[category][schol]
+     # Debug: Print the results to the console for troubleshooting
+     return render(request, 'users/search.html', {'results': results, 'query': query})
+
+
+
 
 
