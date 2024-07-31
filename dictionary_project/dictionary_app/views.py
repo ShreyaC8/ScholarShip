@@ -7,6 +7,6 @@ def search_dictionary(request):
     results = {}
     
     if query:
-        results = {k: v for k, v in dictionary.items() if query.lower() in k.lower()}
+        results = {k: v for k, v in generic.items() or v in agri_vet.items() if query.lower() in k.lower()}
 
     return render(request, 'dictionary_app/search.html', {'results': results, 'query': query})
