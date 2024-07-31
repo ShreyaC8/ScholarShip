@@ -117,10 +117,10 @@ def search_schol(request):
 
      if query:
          # Iterate through the main categories
-         for category in schol_type.items():
-             for schol in category.items():
-                if query.lower() in category.lower():
-                    if category not in results:
+         for category in schol_type:
+             for schol in schol_type[category]:
+                if query.lower() in schol_type[category].lower():
+                    if schol_type[category] not in results:
                         results[category] = {}
                     results[category] = schol_type[category][schol]
      # Debug: Print the results to the console for troubleshooting
