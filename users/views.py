@@ -116,18 +116,38 @@ def comp_math_view(request):
     comp_math_scholarships = schol_type.get("comp_math", {})
     return render(request, 'users/comp_math.html', {'comp_math_scholarships': comp_math_scholarships})
 
-def agri_vet_view(request):
-    agri_vet_scholarships = schol_type.get("agri_vet", {})
-    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
+def sci_view(request):
+    sci_scholarships = schol_type.get("sci", {})
+    return render(request, 'users/sci.html', {'sci_scholarships': sci_scholarships})
 
-def agri_vet_view(request):
-    agri_vet_scholarships = schol_type.get("agri_vet", {})
-    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
+def art_design_view(request):
+    art_design_scholarships = schol_type.get("art_design", {})
+    return render(request, 'users/art_design.html', {'art_design_scholarships': art_design_scholarships})
 
-def agri_vet_view(request):
-    agri_vet_scholarships = schol_type.get("agri_vet", {})
-    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
+def engin_tech_view(request):
+    engin_tech_scholarships = schol_type.get("engin_tech", {})
+    return render(request, 'users/engin_tech.html', {'engin_tech_scholarships': engin_tech_scholarships})
 
-def agri_vet_view(request):
-    agri_vet_scholarships = schol_type.get("agri_vet", {})
-    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
+def health_med_view(request):
+    health_med_scholarships = schol_type.get("health_med", {})
+    return render(request, 'users/health_med.html', {'health_med_scholarships': health_med_scholarships})
+
+def humanities_view(request):
+    humanities_scholarships = schol_type.get("humanities", {})
+    return render(request, 'users/humanities.html', {'humanities_scholarships': health_med_scholarships})
+
+def law_view(request):
+    law_scholarships = schol_type.get("law", {})
+    return render(request, 'users/law.html', {'law_scholarships': law_scholarships})
+
+def fitness_view(request):
+    fitness_scholarships = schol_type.get("fitness", {})
+    return render(request, 'users/fitness.html', {'fitness_scholarships': fitness_scholarships})
+
+def social_comms_view(request):
+    social_comms_scholarships = schol_type.get("social_comms", {})
+    return render(request, 'users/social_comms.html', {'social_comms_scholarships': social_comms_scholarships})
+
+def trav_tourism_view(request):
+    trav_tourism_scholarships = schol_type.get("trav_tourism", {})
+    return render(request, 'users/trav_tourism.html', {'trav_tourism_scholarships': trav_tourism_scholarships})

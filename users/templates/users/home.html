@@ -12,11 +12,16 @@
                 <div class="list-group">
                     <a href="{% url 'generic' %}" class="list-group-item list-group-item-action">Generic Scholarships</a>
                     <a href="{% url "agri_vet"%}" class="list-group-item list-group-item-action">Agriculture and Veterinary Scholarships</a>
-                    <a class="list-group-item list-group-item-action">Computer Science and Mathematics Scholarships</a>
-                    <a class="list-group-item list-group-item-action">Humanities Scholarships</a>
-                    <a class="list-group-item list-group-item-action">Law Scholarships</a>
-                    <a class="list-group-item list-group-item-action">Fitness Scholarships</a>
-                    <a class="list-group-item list-group-item-action">Social Communications Scholarships</a>
+                    <a href="{% url "comp_math"%}" class="list-group-item list-group-item-action">Computer Science and Mathematics Scholarships</a>
+                    <a href="{% url "sci"%}" class="list-group-item list-group-item-action">Science Scholarships</a>
+                    <a href="{% url "art_design"%}" class="list-group-item list-group-item-action">Art and Design Scholarships</a>
+                    <a href="{% url "engin_tech"%}" class="list-group-item list-group-item-action">Engineering and Technology Scholarships</a>
+                    <a href="{% url "health_med"%}" class="list-group-item list-group-item-action">Health and Medicine Scholarships</a>
+                    <a href="{% url "humanities"%}" class="list-group-item list-group-item-action">Humanities Scholarships</a>
+                    <a href="{% url "law"%}" class="list-group-item list-group-item-action">Law Scholarships</a>
+                    <a href="{% url "fitness"%}" class="list-group-item list-group-item-action">Fitness Scholarships</a>
+                    <a href="{% url "social_comms"%}" class="list-group-item list-group-item-action">Social Communications Scholarships</a>
+                    <a href="{% url "trav_tourism"%}" class="list-group-item list-group-item-action">Travel Toursim</a>
                 </div>
             {% else %}
                 <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Sign in</a>
