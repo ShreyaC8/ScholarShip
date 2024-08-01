@@ -10,4 +10,9 @@ urlpatterns = [
     path('profile/', profile, name='users-profile'),
     path('generic/', generic_view, name='generic'),
     path('agri_vet/', agri_vet_view, name='agri_vet'),
+    path('agri_vet/', agri_vet_view, name='agri_vet'),
+    path('agri_vet/', agri_vet_view, name='agri_vet'),
+    path('agri_vet/', agri_vet_view, name='agri_vet'),
+    path('agri_vet/', agri_vet_view, name='agri_vet'),
+    path('agri_vet/', agri_vet_view, name='agri_vet'),
     ]

@@ -112,46 +112,22 @@ def agri_vet_view(request):
     agri_vet_scholarships = schol_type.get("agri_vet", {})
     return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
 
+def comp_math_view(request):
+    comp_math_scholarships = schol_type.get("comp_math", {})
+    return render(request, 'users/comp_math.html', {'comp_math_scholarships': comp_math_scholarships})
 
-# from .scholarship import schol_type
+def agri_vet_view(request):
+    agri_vet_scholarships = schol_type.get("agri_vet", {})
+    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
 
-# def search_schol(request):
-#      query = request.GET.get('query', '')
-#      results = {}
+def agri_vet_view(request):
+    agri_vet_scholarships = schol_type.get("agri_vet", {})
+    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
 
-#      if query:
-#          # Iterate through the main categories
-#          for category in schol_type.items():
-#              for schol in category.items():
-#                 if query.lower() in category.lower():
-#                     if category not in results:
-#                         results[category] = {}
-#                     results[category] = schol_type[category][schol]
-#      # Debug: Print the results to the console for troubleshooting
-#      return render(request, 'users/search.html', {'results': results, 'query': query})
+def agri_vet_view(request):
+    agri_vet_scholarships = schol_type.get("agri_vet", {})
+    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
 
-# import logging
-# from django.shortcuts import render
-# from .scholarship import get_generic_scholarships
-
-# logger = logging.getLogger(__name__)
-
-# def search_scholarships(request):
-#     generic_scholarships = get_generic_scholarships()
-#     logger.info(f"Generic scholarships: {generic_scholarships}")
-#     query = request.GET.get('q')
-#     if query:
-#         filtered_scholarships = {
-#             name: details for name, details in generic_scholarships.items()
-#             if query.lower() in name.lower() or query.lower() in details['desc'].lower()
-#         }
-#     else:
-#         filtered_scholarships = generic_scholarships
-#     return render(request, 'search.html', {'scholarships': filtered_scholarships})
-
-# from django.http import HttpResponse
-
-# def test_view(request):
-#     return HttpResponse("Test view is working!")
-
-
+def agri_vet_view(request):
+    agri_vet_scholarships = schol_type.get("agri_vet", {})
+    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
