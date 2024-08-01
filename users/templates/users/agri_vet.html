@@ -1,12 +1,13 @@
 {% extends "users/base.html" %}
-{% block title %}Generic{% endblock title%}
+{% block title %}Agri_Vet{% endblock title%}
 {% block content %}
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generic Scholarships</title>
+    <title>Agriculture and Veterinary Scholarships</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -18,31 +19,31 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .card-header {
-            background-color: #007bff;
+            background-color: #28a745;
             color: #fff;
         }
         .card-body {
             background-color: #ffffff;
         }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
         }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
         }
         h1 {
-            color: #007bff;
+            color: #28a745;
         }
     </style>
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="text-center mb-4">Generic Scholarships</h1>
+        <h1 class="text-center mb-4">Agriculture and Veterinary Scholarships</h1>
 
         <div class="row">
-            {% for name, details in generic_scholarships.items %}
+            {% for name, details in agri_vet_scholarships.items %}
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
@@ -64,5 +65,7 @@
     </div>
 </body>
 </html>
+
+
   
 {% endblock content %}

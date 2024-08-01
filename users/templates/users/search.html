@@ -1,36 +1,34 @@
+
+<pre>
+    Debug info:
+    {{ scholarships|pprint }}
+</pre>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search Results</title>
+    <title>Generic Scholarships</title>
 </head>
 <body>
-    <h1>Search Scholarships</h1>
-    <form method="get" action="{% url 'search_schol' %}">
-        <input type="text" name="query" value="{{ query }}" placeholder="Enter category...">
-        <button type="submit">Search</button>
-    </form>
-
-    <div>
-        {% if results %}
-            {% for category, scholarships in results.items %}
-                <h2>{{ category|capfirst }}</h2>
-                <ul>
-                    {% for scholarship_name, scholarship_details in scholarships.items %}
-                        <li>
-                            <h3>{{ scholarship_name }}</h3>
-                            <p><strong>Description:</strong> {{ scholarship_details.desc }}</p>
-                            <p><strong>Eligibility:</strong> {{ scholarship_details.eligibility }}</p>
-                            <p><strong>Level of Study:</strong> {{ scholarship_details.lvl_study }}</p>
-                            <p><strong>Location:</strong> {{ scholarship_details.location }}</p>
-                            <p><strong>Website:</strong> <a href="{{ scholarship_details.website }}" target="_blank">{{ scholarship_details.website }}</a></p>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% endfor %}
-        {% else %}
-            <p>No results found.</p>
-        {% endif %}
-    </div>
+    <h1>Generic Scholarships</h1>
+    
+    <!-- Debug information -->
+    <p>Number of scholarships: {{ scholarships|length }}</p>
+    
+    {% if scholarships %}
+        {% for name, details in scholarships.items %}
+            <h2>{{ name }}</h2>
+            <p><strong>Description:</strong> {{ details.desc }}</p>
+            <p><strong>Eligibility:</strong> {{ details.eligibility }}</p>
+            <p><strong>Level of Study:</strong> {{ details.lvl_study }}</p>
+            <p><strong>Location:</strong> {{ details.location }}</p>
+            <p><strong>Website:</strong> <a href="{{ details.website }}">{{ details.website }}</a></p>
+            <hr>
+        {% empty %}
+            <p>No scholarships found.</p>
+        {% endfor %}
+    {% else %}
+        <p>No scholarships data available.</p>
+    {% endif %}
 </body>
 </html>
-

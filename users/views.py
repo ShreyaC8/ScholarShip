@@ -100,33 +100,58 @@ def profile(request):
 
 from django.shortcuts import render
 
+# views.py
+from django.shortcuts import render
+from .scholarship import schol_type  # Ensure you have the correct path to import schol_type
+
 def generic_view(request):
-    return render(request, 'users/generic.html')
+    generic_scholarships = schol_type.get("generic", {})
+    return render(request, 'users/generic.html', {'generic_scholarships': generic_scholarships})
 
-def agriculture_view(request):
-    return render(request, 'users/agriculture.html')
-
-def search_view(request):
-    return render(request, 'users/search.html')
-
-from .scholarship import schol_type
-
-def search_schol(request):
-     query = request.GET.get('query', '')
-     results = {}
-
-     if query:
-         # Iterate through the main categories
-         for category in schol_type.items():
-             for schol in category.items():
-                if query.lower() in category.lower():
-                    if category not in results:
-                        results[category] = {}
-                    results[category] = schol_type[category][schol]
-     # Debug: Print the results to the console for troubleshooting
-     return render(request, 'users/search.html', {'results': results, 'query': query})
+def agri_vet_view(request):
+    agri_vet_scholarships = schol_type.get("agri_vet", {})
+    return render(request, 'users/agri_vet.html', {'agri_vet_scholarships': agri_vet_scholarships})
 
 
+# from .scholarship import schol_type
 
+# def search_schol(request):
+#      query = request.GET.get('query', '')
+#      results = {}
+
+#      if query:
+#          # Iterate through the main categories
+#          for category in schol_type.items():
+#              for schol in category.items():
+#                 if query.lower() in category.lower():
+#                     if category not in results:
+#                         results[category] = {}
+#                     results[category] = schol_type[category][schol]
+#      # Debug: Print the results to the console for troubleshooting
+#      return render(request, 'users/search.html', {'results': results, 'query': query})
+
+# import logging
+# from django.shortcuts import render
+# from .scholarship import get_generic_scholarships
+
+# logger = logging.getLogger(__name__)
+
+# def search_scholarships(request):
+#     generic_scholarships = get_generic_scholarships()
+#     logger.info(f"Generic scholarships: {generic_scholarships}")
+#     query = request.GET.get('q')
+#     if query:
+#         filtered_scholarships = {
+#             name: details for name, details in generic_scholarships.items()
+#             if query.lower() in name.lower() or query.lower() in details['desc'].lower()
+#         }
+#     else:
+#         filtered_scholarships = generic_scholarships
+#     return render(request, 'search.html', {'scholarships': filtered_scholarships})
+
+# from django.http import HttpResponse
+
+# def test_view(request):
+#     return HttpResponse("Test view is working!")
 
 
