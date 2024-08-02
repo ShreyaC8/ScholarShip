@@ -5,12 +5,11 @@
 <style>
     /* Custom style to set the background color */
     body {
-        background-color: #AFAFDC; /* Light Pastel Purple */
+        background-color: #7EC1CE; /* Light Pastel Purple */
         color: #333; /* Set text color to dark for better contrast */
     }
     
     .jumbotron {
-        background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for the jumbotron */
         border-radius: 10px; /* Rounded corners for modern look */
         padding: 2rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -38,19 +37,22 @@
     }
 </style>
 
-<div class="container mt-5">
-    <div class="jumbotron text-center bg-transparent p-10 rounded-lg shadow-sm">
-        <h1 class="display-4 font-weight-bold">Welcome, {{ user.first_name|title|default:'Guest' }}</h1>
-        <p class="lead text-muted mb-4">
-            To get started, choose your course.
-        </p>
-        <hr class="my-4">
+<div class="container-xxl">
+    <div class="jumbotron text-center p-10 rounded-lg shadow-sm" style ='background-color: #7EC1CE;' >
+        <div style ='background-color: #fff; border-radius: 10px' class = 'shadow-sm h-100'>
+            <h1 class="display-4 font-weight-bold">Welcome, {{ user.first_name|title|default:'Guest' }}</h1>
+            <p class="lead text mb-4"> <strong>
+                To get started, choose your course.
+            </strong>
+            </p>
+            <hr class="my-4">
+        </div>
         {% if user.is_authenticated %}
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/generic.jpg"/>
+                        <img src="/media/icon/generic.jpg" class="img-fluid" alt="Generic Scholarships"/>
                         <h5 class="card-title">Generic Scholarships</h5>
                         <p class="card-text">Explore a wide range of general scholarships for all fields.</p>
                         <a href="{% url 'generic' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -60,7 +62,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/agri_vet.jpg" width="40%" height="45%"/>
+                        <img src="/media/icon/agri_vet.jpg" class="img-fluid" alt="Agriculture and Veterinary" width='40%' width='35%'/>
                         <h5 class="card-title">Agriculture and Veterinary</h5>
                         <p class="card-text">Find scholarships in agriculture and veterinary studies.</p>
                         <a href="{% url 'agri_vet' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -70,7 +72,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/comp_math.jpg"/>
+                        <img src="/media/icon/comp_math.jpg" class="img-fluid" alt="Computer Science and Mathematics"/>
                         <h5 class="card-title">Computer Science and Mathematics</h5>
                         <p class="card-text">Discover opportunities in computer science and mathematics.</p>
                         <a href="{% url 'comp_math' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -80,7 +82,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/sci.jpg"/>
+                        <img src="/media/icon/sci.jpg" class="img-fluid" alt="Science Scholarships"/>
                         <h5 class="card-title">Science Scholarships</h5>
                         <p class="card-text">Find scholarships for various scientific fields.</p>
                         <a href="{% url 'sci' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -90,7 +92,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/art_design.jpg"/>
+                        <img src="/media/icon/art_design.jpg" class="img-fluid" alt="Art and Design"/>
                         <h5 class="card-title">Art and Design</h5>
                         <p class="card-text">Explore creative scholarships in art and design.</p>
                         <a href="{% url 'art_design' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -100,7 +102,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/engin_tech.jpg"/>
+                        <img src="/media/icon/engin_tech.jpg" class="img-fluid" alt="Engineering and Technology"/>
                         <h5 class="card-title">Engineering and Technology</h5>
                         <p class="card-text">Discover scholarships in engineering and technology.</p>
                         <a href="{% url 'engin_tech' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -110,7 +112,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/health_med.jpg"/>
+                        <img src="/media/icon/health_med.jpg" class="img-fluid" alt="Health and Medicine"/>
                         <h5 class="card-title">Health and Medicine</h5>
                         <p class="card-text">Find scholarships for health and medicine studies.</p>
                         <a href="{% url 'health_med' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -120,7 +122,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/humanities.jpg" width="40%" height="45%"/>
+                        <img src="/media/icon/humanities.jpg" class="img-fluid" alt="Humanities" width='40%' width='35%'/>
                         <h5 class="card-title">Humanities</h5>
                         <p class="card-text">Explore humanities scholarships for diverse disciplines.</p>
                         <a href="{% url 'humanities' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -130,7 +132,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/law.jpg"/>
+                        <img src="/media/icon/law.jpg" class="img-fluid" alt="Law"/>
                         <h5 class="card-title">Law</h5>
                         <p class="card-text">Find scholarships for law studies and related fields.</p>
                         <a href="{% url 'law' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -140,7 +142,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/fitness.jpg"/>
+                        <img src="/media/icon/fitness.jpg" class="img-fluid" alt="Fitness"/>
                         <h5 class="card-title">Fitness</h5>
                         <p class="card-text">Explore scholarships for sports and fitness enthusiasts.</p>
                         <a href="{% url 'fitness' %}" class="btn btn-outline-primary stretched-link">Explore</a>
@@ -150,20 +152,10 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <img src="/media/icon/social_comms.jpg"/>
+                        <img src="/media/icon/social_comms.jpg" class="img-fluid" alt="Social Sciences and Communications"/>
                         <h5 class="card-title">Social Sciences and Communications</h5>
                         <p class="card-text">Discover scholarships in social communications fields.</p>
                         <a href="{% url 'social_comms' %}" class="btn btn-outline-primary stretched-link">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <img src="/media/icon/trav_tourism.jpg"/>
-                        <h5 class="card-title">Travel and Tourism</h5>
-                        <p class="card-text">Find scholarships for travel and tourism studies.</p>
-                        <a href="{% url 'trav_tourism' %}" class="btn btn-outline-primary stretched-link">Explore</a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 {% extends "users/base.html" %}
-{% block title %}Generic{% endblock title%}
+{% block title %}Generic{% endblock title %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
@@ -8,38 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generic Scholarships</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f4f6f9;
-        }
-        .card {
-            margin-bottom: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card-header {
-            background-color: #007bff;
-            color: #fff;
-        }
-        .card-body {
-            background-color: #ffffff;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
-        }
-        h1 {
-            color: #007bff;
-        }
-    </style>
+
     <style>
         /* Custom style to set the background color */
         body {
-            background-color: #AFAFDC; /* Light Pastel Purple */
+            background-color: #7EC1CE; /* Light Pastel Purple */
             color: #333; /* Set text color to dark for better contrast */
         }
         
@@ -52,43 +25,91 @@
         
         .card {
             background-color: #ffffff; /* White background for cards */
-            border-radius: 10px; /* Rounded corners for cards */
-            border: 1px solid #8484C4; /* Border with a slightly darker shade for contrast */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            border: 2px solid #79BEEE; /* Solid border with the specified color */
+            width: 100%; /* Full width for flexibility */
+            height: 100%; /* Full height to ensure consistent size */
+            display: flex;
+            flex-direction: column;
+            border-radius: 7px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-color: #5056b3;
         }
     
         .card-body {
             color: #333; /* Dark text color for readability inside cards */
+            flex-grow: 1; /* Allow card body to grow and fill available space */
         }
-    
-        .btn-outline-primary {
-            color: #4A4A94; /* Adjusted button text color for better contrast */
-            border-color: #4A4A94; /* Button border color */
+
+        .card-header, .card-body, .card-footer {
+            padding: 15px; /* Add consistent padding */
         }
-    
-        .btn-outline-primary:hover {
-            background-color: #4A4A94;
+
+        .card-header {
+            font-size: 125%;
+        }
+
+        .btn-primary {
+            border-color: #5056b3; /* New button border color */
+            color: #fff; /* White text color for contrast */
+            background-color: #5056b3;
+            outline: none;
+            box-shadow: none;
             color: white;
         }
+    
+        .btn-primary:hover {
+            background-color: #6b70bf; /* Darker shade for hover effect */
+            border-color: #6b70bf;
+        }
+
+        .card-footer {
+            background-color: #f8f9fa; /* Light grey background for footer */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .col-md-6 {
+            flex: 0 0 48%; /* Each column takes up approximately 48% of the row's width */
+            max-width: 48%;
+            margin-bottom: 20px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        /* Media query for smaller devices */
+        @media (max-width: 767px) {
+            .col-md-6 {
+                flex: 0 0 100%; /* Full width for smaller screens */
+                max-width: 100%;
+            }
+        }
+        
     </style>
+    
 </head>
 <body>
-    <div class="container mt-2">
-        <div class="jumbotron text-center bg-transparent p-10 rounded-lg shadow-sm">
-            <h1 class="text-center mb-4">Generic Scholarships</h1>
+    <div class="container mt-2" >
+        <div class="jumbotron text-center bg-white p-10 rounded-lg shadow-sm">
+            <h1 class="text-center mb-4"><strong>Generic Scholarships</strong></h1>
 
             <div class="row">
                 {% for name, details in generic_scholarships.items %}
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header"><strong>
                                 {{ name }}
+                            </strong>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body" >
                                 <p class="card-text"><strong>Description:</strong> {{ details.desc }}</p>
                                 <p class="card-text"><strong>Eligibility:</strong> {{ details.eligibility }}</p>
                                 <p class="card-text"><strong>Level of Study:</strong> {{ details.lvl_study }}</p>
                                 <p class="card-text"><strong>Location:</strong> {{ details.location }}</p>
+                            </div>
+                            <div class="card-footer">
                                 <a href="{{ details.website }}" class="btn btn-primary" target="_blank">Learn More</a>
                             </div>
                         </div>
@@ -101,5 +122,5 @@
     </div>
 </body>
 </html>
-  
+
 {% endblock content %}

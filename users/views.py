@@ -134,7 +134,7 @@ def health_med_view(request):
 
 def humanities_view(request):
     humanities_scholarships = schol_type.get("humanities", {})
-    return render(request, 'users/humanities.html', {'humanities_scholarships': health_med_scholarships})
+    return render(request, 'users/humanities.html', {'humanities_scholarships': humanities_scholarships})
 
 def law_view(request):
     law_scholarships = schol_type.get("law", {})

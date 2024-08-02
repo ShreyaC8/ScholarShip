@@ -92,22 +92,6 @@ schol_type = {
             "location": "United Kingdom",
             "website": "https://www.rau.ac.uk/student-life/finance-scholarships-and-bursaries/clyde-higgs-postgraduate-scholarship"
         },
-        "University of Leeds": {
-            "name": "Faculty of Biological Sciences International Excellence Scholarships",
-            "desc": "Scholarships for international students in biological sciences, including agriculture, at the University of Leeds.",
-            "eligibility": "Open to international students demonstrating excellence in biological sciences, including agriculture.",
-            "lvl_study": "Masters",
-            "location": "United Kingdom",
-            "website": "https://biologicalsciences.leeds.ac.uk/directory_record/523/faculty-of-biological-sciences-international-excellence-scholarships"
-        },
-        "University of East Anglia": {
-            "name": "The Chadacre Trust Scholarship",
-            "desc": "Scholarship for Masters students at the University of East Anglia.",
-            "eligibility": "Available for Masters students studying agriculture or related fields at the University of East Anglia.",
-            "lvl_study": "Masters",
-            "location": "United Kingdom",
-            "website": "https://www.uea.ac.uk/study/fees-and-funding/scholarships/the-chadacre-trust-scholarship"
-        },
         "University of Nottingham": {
             "name": "The Gordon Rosen Undergraduate Research Scholarship",
             "desc": "The scholarship is worth up to £2,500 and is for second-year students who wish to develop their research skills by undertaking a summer research project in the field of animal production (specifically poultry production). The successful applicant will be involved in a project for 8-10 weeks during the summer of 2024.",
@@ -117,90 +101,57 @@ schol_type = {
             "website": "https://www.ntu.ac.uk/study-and-courses/undergraduate/fees-and-funding/bursaries-and-scholarships/the-gordon-rosen-undergraduate-research-scholarship"
         },
     },
-    "comp_math": {
-        "University of Oxford": {
-            "name": "Oxford-Weidenfeld and Hoffmann Scholarships",
-            "desc": "Scholarships for outstanding students in computer science and mathematics from developing countries.",
-            "eligibility": '''Students must demonstrate a commitment to improving society in their home countries, 
-                              be willing to return to their home country after studies, and have a record of leadership achievement.''',
-            "lvl_study": "Masters",
+"comp_math": {
+        "University College London": {
+            "name": "Google DeepMind Computer Science Masters Scholarships",
+            "desc": "Scholarships for under-represented communities funded by Google DeepMind for a number of Masters courses within the Computer Science department at UCL",
+            "eligibility": "Scholarships are offered for full-time master’s students in specific AI and data science programs. Eligible candidates must be Black-African, Black-Caribbean, female, or from a household earning under £25,000.",
+            "lvl_study": "Integrated Masters",
             "location": "United Kingdom",
-            "website": "https://www.ox.ac.uk/admissions/graduate/fees-and-funding/scholarships/university-wide/oxford-weidenfeld-and-hoffmann-scholarships-and-leadership-programme"
-        },
-        "University of Cambridge": {
-            "name": "Gates Cambridge Scholarship",
-            "desc": "Full-cost scholarships for exceptional students in any discipline, including computer science.",
-            "eligibility": "Open to non-UK citizens applying to a full-time postgraduate degree in any subject available at the University of Cambridge.",
-            "lvl_study": "Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.gatescambridge.org"
-        },
-        "University of Edinburgh": {
-            "name": "Edinburgh Global Research Scholarships",
-            "desc": "Scholarships aimed at attracting the best and brightest PhD students from around the world.",
-            "eligibility": "Open to overseas students starting a PhD program in computer science or mathematics.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.ed.ac.uk/student-funding/postgraduate/international/global/research"
-        },
-        "Imperial College London": {
-            "name": "Imperial College PhD Scholarship Scheme",
-            "desc": "Offers a large number of fully funded PhD scholarships for students with outstanding academic records and potential.",
-            "eligibility": "Available to students worldwide, based on academic merit and potential for research excellence.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.imperial.ac.uk/study/pg/fees-and-funding/scholarships/phd-scholarship/"
+            "website": 'https://www.windsor-fellowship.org/programmes/deepmind-computer-science-scholarships/'
         },
         "University of Manchester": {
-            "name": "President's Doctoral Scholar Awards",
-            "desc": "Scholarships for outstanding students who wish to undertake postgraduate research study at the University of Manchester.",
-            "eligibility": "Open to all nationalities, with strong academic records and research potential.",
-            "lvl_study": "PhD",
+            "name": "Beatrice Shilling Scholarship",
+            "desc": " This scholarship is open to UK fee-paying students who are women and who hold an offer to study an undergraduate engineering course for September 2024. ",
+            "eligibility": " Scholarships will be awarded to the highest performing applicants or those with the highest potential to attain based on their UCAS application within each engineering discipline (at least two students per discipline). ",
+            "lvl_study": "Undergraduate/Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.manchester.ac.uk/study/postgraduate-research/funding/opportunities/display/?id=00000273"
+            "website": " https://www.manchester.ac.uk/study/undergraduate/fees-and-funding/scholarships-and-bursaries/subject-specific//"
+        },
+        "University of Birmingham": {
+            "name": " Mathematics International Achievement Scholarship ",
+            "desc": "The Mathematics International Achievement Scholarship provides a £1500 reduction in tuition fees annually for qualifying undergraduate students.",
+            "eligibility": " To be eligible for the Mathematics International Achievement Scholarship, you must meet specific academic criteria, have partial fee coverage, be classified as an overseas student, and be accepted into a qualifying Mathematics course for 2025. This award cannot be combined with the Mathematics International Excellence Scholarship.",
+            "lvl_study": "Undergraduate",
+            "location": "United Kingdom",
+            "website": " https://www.birmingham.ac.uk/schools/mathematics/ug-admissions/grants-scholarships"
         }
     },   
     "sci": {
-        "Imperial College London": {
-            "name": "President's PhD Scholarships",
-            "desc": "Opportunities for the most talented students to receive funding for a PhD in science and engineering.",
-            "eligibility": "Open to all students who can demonstrate exceptional academic achievement and research potential.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.imperial.ac.uk/study/pg/fees-and-funding/scholarships/phd-scholarship/"
-        },
-        "University of Cambridge": {
-            "name": "Cambridge International Scholarships",
-            "desc": "For high-achieving international students pursuing a PhD at the University of Cambridge.",
-            "eligibility": "Available to outstanding international students from any country who are accepted into a PhD programme.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.graduate.study.cam.ac.uk/finance/funding"
-        },
-        "University of Oxford": {
-            "name": "Oxford Doctoral Training Partnership Scholarships",
-            "desc": "Funded positions for high-achieving PhD students in science and engineering.",
-            "eligibility": "Open to all international students who meet the entry requirements for the DTP program.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.ox.ac.uk/admissions/graduate/fees-and-funding/graduate-scholarships"
-        },
-        "University of Edinburgh": {
-            "name": "Edinburgh Global Research Scholarships",
-            "desc": "For PhD students demonstrating exceptional academic achievements.",
-            "eligibility": "Available to overseas students who have applied for a PhD programme in science.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.ed.ac.uk/student-funding/postgraduate/international/global/research"
-        },
-        "University of Bristol": {
-            "name": "Bristol International Fellowships",
-            "desc": "For international researchers undertaking PhD studies in science and related fields.",
-            "eligibility": "Available to international students who hold a relevant undergraduate or master's degree.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.bristol.ac.uk/fees-funding/postgraduate/international/"
-        }
+    "University of Birmingham Chemistry Scholarships": {
+        "name": "University of Birmingham Chemistry Scholarships",
+        "desc": "Funding opportunities for undergraduate students pursuing chemistry degrees at the University of Birmingham.",
+        "eligibility": "Available to undergraduate students with strong academic records and financial need.",
+        "lvl_study": "Undergraduate",
+        "location": "United Kingdom",
+        "website": "https://www.birmingham.ac.uk/schools/chemistry/undergraduate/scholarships"
+          },
+    "University of Bristol Chemistry Postgraduate Scholarships": {
+        "name": "University of Bristol Chemistry Postgraduate Scholarships",
+        "desc": "Provides funding opportunities for postgraduate students pursuing chemistry degrees at the University of Bristol.",
+        "eligibility": "Available to postgraduate students with strong academic records and financial need.",
+        "lvl_study": "Postgraduate",
+        "location": "United Kingdom",
+        "website": "https://www.bristol.ac.uk/chemistry/postgraduate/fees-scholarships/"
+         },
+    "University of Sheffield MPS Undergraduate Scholarships": {
+        "name": "University of Sheffield MPS Undergraduate Scholarships",
+        "desc": "Offers scholarships for undergraduate students in the Department of Molecular Biology and Biotechnology at the University of Sheffield.",
+        "eligibility": "Available to undergraduate students with strong academic achievements and financial need.",
+        "lvl_study": "Undergraduate",
+        "location": "United Kingdom",
+        "website": "https://www.sheffield.ac.uk/mps/undergraduate/scholarships"
+          }
     },
     "art_design": {
         "Royal College of Art": {
@@ -209,7 +160,8 @@ schol_type = {
             "eligibility": "Based on financial need and academic merit.",
             "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.rca.ac.uk/study/scholarships/"
+            "website": "https://www.rca.ac.uk/study/application-process/funding-your-studies/rca-scholarships-and-awards/"
+
         },
         "Central Saint Martins": {
             "name": "UAL Postgraduate Scholarships",
@@ -217,7 +169,7 @@ schol_type = {
             "eligibility": "Open to UK/EU students with a strong academic record.",
             "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.arts.ac.uk/study-at-ual/student-fees-and-funding/scholarships-search"
+            "website": "https://www.arts.ac.uk/study-at-ual/fees-and-funding/scholarships-search/ual-international-postgraduate-50,000-scholarships"
         },
         "Glasgow School of Art": {
             "name": "GSA International Scholarships",
@@ -225,41 +177,25 @@ schol_type = {
             "eligibility": "Based on academic excellence and financial need.",
             "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.gsa.ac.uk/about/our-schools/school-of-fine-art/funding/"
-        },
-        "University of the Arts London": {
-            "name": "UAL International Postgraduate Scholarships",
-            "desc": "Support for exceptional international students pursuing postgraduate programs in art and design.",
-            "eligibility": "Open to international students with excellent academic records.",
-            "lvl_study": "Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.arts.ac.uk/study-at-ual/student-fees-and-funding/scholarships-search"
-        },
+            "website": "https://www.gsa.ac.uk/study-at-the-gsa/scholarships"
+        }
     },
     "engin_tech": {
-        "University of Bristol": {
-            "name": "Engineering International Scholarships",
-            "desc": "Scholarships for international students applying to engineering programs.",
-            "eligibility": "Open to non-UK/EU students with academic excellence in engineering.",
-            "lvl_study": "Undergraduate",
-            "location": "United Kingdom",
-            "website": "https://www.bristol.ac.uk/study/undergraduate/fees-funding/scholarships/engineering-international-scholarships/"
-        },
-        "University of Southampton": {
-            "name": "Engineering and Physical Sciences Scholarships",
-            "desc": "Scholarships for postgraduate students in engineering fields.",
-            "eligibility": "Outstanding academic achievement in engineering disciplines.",
+          "University of Southampton": {
+            "name": " Southampton Engineering Deans Postgraduate International Scholarship",
+            "desc": " A scholarship for international students pursuing an eligible postgraduate master’s in engineering.",
+            "eligibility": "You must be an international student with an offer for an eligible course and have achieved a 1st or equivalent in your undergraduate studies. No application is necessary; eligible students will be notified by email.",
             "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.southampton.ac.uk/study/fees-funding/scholarships/engineering-deans-international"
+            "website": " https://www.southampton.ac.uk/study/fees-funding/scholarships/engineering-deans-international"
         },
         "University of Leeds": {
-            "name": "Faculty of Engineering International Scholarships",
-            "desc": "Funding for international students pursuing undergraduate degrees in engineering.",
-            "eligibility": "Available to non-UK students with excellent academic records.",
-            "lvl_study": "Undergraduate",
+            "name": " School of Chemical and Process Engineering - International Masters Excellence Scholarships",
+            "desc": " These prestigious international scholarships provide a 25% reduction in tuition fees to international students who exhibit exceptional academic performance.",
+            "eligibility": " To qualify for the scholarship, you must be an international student, self-funding or partially funded, applying for an eligible 2024/2025 Master's program. You need a strong academic record (2.1 bachelor's degree or equivalent) and excellent professional or personal skills shown through work experience or extracurricular activities.",
+            "lvl_study": "Masters",
             "location": "United Kingdom",
-            "website": "https://www.engineering.leeds.ac.uk/undergraduate/fees-funding/scholarships/"
+            "website": " https://eps.leeds.ac.uk/directories/dir-record/scholarships/4613/school-of-chemical-and-process-engineering-international-masters-excellence-scholarships"
         },
         "University of Sheffield": {
             "name": "Sheffield International Engineering Scholarship",
@@ -267,15 +203,15 @@ schol_type = {
             "eligibility": "Based on academic merit, open to all nationalities.",
             "lvl_study": "Undergraduate",
             "location": "United Kingdom",
-            "website": "https://www.sheffield.ac.uk/international/finance/scholarships"
+            "website": " https://www.sheffield.ac.uk/general-engineering/undergraduate/scholarships#:~:text=Engineering%20Excellence%20Scholarship&text=The%20scholarship%20will%20be%20awarded,will%20receive%20the%20Excellence%20Scholarship."
         },
-        "University of Strathclyde": {
-            "name": "Strathclyde Excellence Scholarship",
-            "desc": "Scholarships for international students in engineering programs.",
-            "eligibility": "Available to high-achieving international students.",
+        "University of Manchester": {
+            "name": "Beatrice Shilling Scholarship",
+            "desc": " This scholarship is open to UK fee-paying students who are women and who hold an offer to study an undergraduate engineering course for September 2024. ",
+            "eligibility": " Scholarships will be awarded to the highest performing applicants or those with the highest potential to attain based on their UCAS application within each engineering discipline (at least two students per discipline). ",
             "lvl_study": "Undergraduate/Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.strath.ac.uk/study/scholarships/undergraduate/"
+            "website": " https://www.manchester.ac.uk/study/undergraduate/fees-and-funding/scholarships-and-bursaries/subject-specific//"
         }
     },
     "health_med": {
@@ -303,21 +239,13 @@ schol_type = {
             "location": "United Kingdom",
             "website": "https://www.gla.ac.uk/scholarships/"
         },
-        "University of Manchester": {
-            "name": "Manchester Medical School Scholarships",
-            "desc": "Financial support for students enrolled in medical programs.",
-            "eligibility": "Open to all students based on academic merit and financial need.",
-            "lvl_study": "Undergraduate",
-            "location": "United Kingdom",
-            "website": "https://www.manchester.ac.uk/undergraduate/fees-funding/scholarships/"
-        },
         "University of Nottingham": {
             "name": "Nottingham Medical School Scholarships",
             "desc": "Scholarships for exceptional medical students.",
             "eligibility": "Available to students with high academic achievement.",
             "lvl_study": "Undergraduate",
             "location": "United Kingdom",
-            "website": "https://www.nottingham.ac.uk/ugstudy/fees-and-funding/scholarships.aspx"
+            "website": "https://www.nottingham.ac.uk/studywithus/ugstudy/articles/scholarships-and-bursaries-ug/scholarships/subject-specific-bursaries-and-scholarships/faculty-of-medicine-health-sciences-scholarships-bursaries.html"
         }
     },
     "humanities": {
@@ -327,200 +255,98 @@ schol_type = {
             "eligibility": "Open to UK/EU students demonstrating academic excellence.",
             "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.york.ac.uk/study/postgraduate-research/funding/wolfson-scholarships/"
+            "website": " https://www.wolfson.org.uk/funding/funding-for-people/wolfson-postgraduate-scholarships-in-the-humanities/ /"
         },
-        "University of St Andrews": {
-            "name": "St Andrews International Postgraduate Scholarships",
-            "desc": "Support for international postgraduate students in humanities.",
-            "eligibility": "Based on academic merit and financial need.",
-            "lvl_study": "Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.st-andrews.ac.uk/study/fees-and-funding/scholarships/"
+    "The University of Edinburgh Humanities Research Scholarships": {
+        "name": "University of Edinburgh Humanities Research Scholarships",
+        "desc": "Offers funding for students pursuing research degrees in the humanities at the University of Edinburgh.",
+        "eligibility": "Open to students with strong academic records and a research focus in the humanities.",
+        "lvl_study": "Postgraduate",
+        "location": "United Kingdom",
+        "website": "https://www.ed.ac.uk/student-funding/doctoral/humanities-research"
         },
-        "University of Edinburgh": {
-            "name": "Edinburgh Global Research Scholarships",
-            "desc": "Funding for outstanding PhD students in humanities.",
-            "eligibility": "Open to international students with strong academic records.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.ed.ac.uk/student-funding/postgraduate/international/global/research"
-        },
-        "University of Cambridge": {
-            "name": "Cambridge International Scholarships",
-            "desc": "Scholarships for international students undertaking a PhD in humanities.",
-            "eligibility": "Available to students with an outstanding academic record.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.graduate.study.cam.ac.uk/finance/funding"
-        },
-        "University of Oxford": {
-            "name": "Oxford University Humanities Scholarships",
-            "desc": "Scholarships for PhD students in the humanities.",
-            "eligibility": "Open to all students demonstrating high academic potential.",
-            "lvl_study": "PhD",
-            "location": "United Kingdom",
-            "website": "https://www.ox.ac.uk/admissions/graduate/fees-and-funding/graduate-scholarships"
-        }
+    "The European Research Council (ERC) Grants": {
+        "name": "European Research Council (ERC) Grants",
+        "desc": "Offers grants for advanced research in the humanities and social sciences.",
+        "eligibility": "Open to researchers with a strong research proposal and academic record.",
+        "lvl_study": "Postdoctoral",
+        "location": "Europe",
+        "website": "https://erc.europa.eu/funding"
+         }
     },
     "law": {
-        "University of London": {
-            "name": "University of London International Scholarships",
-            "desc": "Funding for international students pursuing law degrees.",
-            "eligibility": "Available to students with strong academic records and financial need.",
-            "lvl_study": "Undergraduate/Postgraduate",
+        "UK Law Society Scholarships": {
+            "name": "UK Law Society Scholarships",
+            "desc": "Offers scholarships for students pursuing legal studies in the UK.",
+            "eligibility": "Open to law students with strong academic records.",
+            "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.london.ac.uk/scholarships"
+            "website": "https://www.lawsociety.org.uk/career-advice/becoming-a-solicitor/funding-and-support-during-your-studies-internships-scholarships-and-sponsors"
         },
-        "University of Edinburgh": {
-            "name": "Edinburgh Law School Scholarships",
-            "desc": "Scholarships for students pursuing undergraduate and postgraduate law degrees.",
-            "eligibility": "Open to students with strong academic achievements.",
-            "lvl_study": "Undergraduate/Postgraduate",
+        "University of Cambridge Law Scholarships": {
+            "name": "University of Cambridge Law Scholarships",
+            "desc": "Offers scholarships for students studying law at the University of Cambridge.",
+            "eligibility": "Open to students with strong academic achievements and financial need.",
+            "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.ed.ac.uk/student-funding/undergraduate/law"
+            "website": "https://llm.law.cam.ac.uk/finance/law-specific-faculty-and-cambridge-trust-funding"
         },
-        "University of Cambridge": {
-            "name": "Cambridge Law Faculty Scholarships",
-            "desc": "Scholarships for exceptional students in law programs.",
-            "eligibility": "Available to students with excellent academic records.",
-            "lvl_study": "Undergraduate/Postgraduate",
+        "University of Oxford Law Scholarships": {
+            "name": "University of Oxford Law Scholarships",
+            "desc": "Provides funding for students pursuing law degrees at the University of Oxford.",
+            "eligibility": "Open to students with strong academic records and financial need.",
+            "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.law.cam.ac.uk/study/undergraduate/scholarships"
-        },
-        "University of Oxford": {
-            "name": "Oxford Law Scholarships",
-            "desc": "Funding for undergraduate and postgraduate law students.",
-            "eligibility": "Open to all nationalities, based on academic merit.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.law.ox.ac.uk/admissions/graduate/scholarships"
-        },
-        "King's College London": {
-            "name": "King's College Law Scholarships",
-            "desc": "Scholarships for students studying law at King's College London.",
-            "eligibility": "Available to high-achieving students with financial need.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/scholarships/law"
+            "website": "https://www.law.ox.ac.uk/content/listing-page/graduate-scholarships"
         }
     },
     "fitness": {
-        "University of Stirling": {
-            "name": "Sport and Exercise Scholarships",
-            "desc": "Support for students who excel in sports and exercise science.",
-            "eligibility": "Open to students with demonstrated excellence in sports or academic achievements.",
-            "lvl_study": "Undergraduate/Postgraduate",
+        "The British Association of Sport and Exercise Sciences (BASES) Awards and Grants": {
+            "name": "The British Association of Sport and Exercise Sciences",
+            "desc": "Provides funding for students pursuing degrees in sport and exercise sciences.",
+            "eligibility": "Open to undergraduate and postgraduate students in the UK.",
+            "lvl_study": " Undergraduate/Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.stir.ac.uk/sport/exercise-scholarships/"
+            "website": "https://www.bases.org.uk/page-awards___grants.html"
         },
-        "University of Leeds": {
-            "name": "Sport Scholarships",
-            "desc": "Scholarships for exceptional student-athletes.",
-            "eligibility": "Available to students with high performance in their respective sports.",
-            "lvl_study": "Undergraduate/Postgraduate",
+        "The Erasmus Mundus": {
+            "name": "European Masters in Sport and Exercise Psychology (EMSEP)",
+            "desc": "Provides funding for international students pursuing a master’s degree in sport and exercise psychology.",
+            "eligibility": "Open to students from outside the EU with strong academic backgrounds.",
+            "lvl_study": "Joint Masters",
             "location": "United Kingdom",
-            "website": "https://www.leeds.ac.uk/scholarships/sport"
+            "website": "https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters"
         },
-        "University of Birmingham": {
-            "name": "Sports Scholarships",
-            "desc": "Funding for students excelling in sports.",
-            "eligibility": "Open to student-athletes with demonstrated success in their sport.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.birmingham.ac.uk/scholarships/sport.aspx"
-        },
-        "Loughborough University": {
-            "name": "Loughborough Sports Scholarships",
-            "desc": "Support for students with outstanding sporting talent.",
-            "eligibility": "Available to students with significant achievements in their sport.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.lboro.ac.uk/sport/scholarships/"
-        },
-        "University of Bath": {
-            "name": "Sport and Exercise Science Scholarships",
-            "desc": "Scholarships for students in sport and exercise science programs.",
-            "eligibility": "Open to students with high academic and athletic achievements.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.bath.ac.uk/campaigns/scholarships-for-sport-and-exercise-science/"
-        }
+
     },
     "social_comms": {
-        "University of Westminster": {
-            "name": "Westminster International Scholarships",
-            "desc": "Scholarships for international students in social sciences and communications.",
-            "eligibility": "Based on academic merit and financial need.",
+        "Think Big About Economics undergraduate scholarship": {
+            "name": "University of Bristol",
+            "desc": "Offers financial support to students pursuing economics degrees with a focus on global issues.",
+            "eligibility": "Open to undergraduate and postgraduate students worldwide with strong academic records.",
             "lvl_study": "Undergraduate/Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.westminster.ac.uk/international-scholarships"
+            "website": "https://www.bristol.ac.uk/students/support/finances/scholarships/global-economics-ug/"
         },
-        "London School of Economics and Political Science": {
+        "EUI (European University Institute) PhD Scholarships in Economics": {
             "name": "LSE Graduate Support Scheme",
-            "desc": "Scholarships for students undertaking graduate studies in social sciences.",
-            "eligibility": "Available to students with excellent academic records and financial need.",
+            "desc": "Offers scholarships for PhD students in economics at the European University Institute.",
+            "eligibility": "Open to students with strong academic records and a focus on European economic research.",
+            "lvl_study": "PhD",
+            "location": "Italy",
+            "website": "https://www.eui.eu/apply?id=doctoral-programme-in-economics&utm_source=Advert&utm_medium=FindAPhD&utm_campaign=PhD2022"
+        },
+        "Economic and Social Research Council Studentship Funding": {
+            "name": "University of St Andrews",
+            "desc": "Scholarships for outstanding international students in social sciences.",
+            "eligibility": "Open to UK and international students with strong research proposals.",
             "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.lse.ac.uk/study-at-lse/graduate/fees-and-funding"
-        },
-        "University of Bristol": {
-            "name": "Bristol International Office Scholarships",
-            "desc": "Support for international students in social sciences and communications.",
-            "eligibility": "Open to international students demonstrating academic excellence.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.bristol.ac.uk/international/fees-funding/"
-        },
-        "University of Glasgow": {
-            "name": "International Leadership Scholarships",
-            "desc": "Scholarships for outstanding international students in social sciences.",
-            "eligibility": "Available to high-achieving students with leadership potential.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.gla.ac.uk/scholarships/universityofglasgowinternationalleadershipscholarship/"
-        },
-    },
-    "trav_tourism": {
-        "University of Brighton": {
-            "name": "International Scholarships for Travel and Tourism",
-            "desc": "Funding for international students pursuing travel and tourism programs.",
-            "eligibility": "Available to students with strong academic achievements and financial need.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.brighton.ac.uk/international/scholarships/index.aspx"
-        },
-        "University of Strathclyde": {
-            "name": "Travel and Tourism Scholarships",
-            "desc": "Support for students in travel and tourism programs.",
-            "eligibility": "Open to students demonstrating high academic performance.",
-            "lvl_study": "Undergraduate",
-            "location": "United Kingdom",
-            "website": "https://www.strath.ac.uk/study/scholarships/"
-        },
-        "University of Sunderland": {
-            "name": "Sunderland Travel and Tourism Scholarships",
-            "desc": "Scholarships for students pursuing undergraduate and postgraduate travel and tourism studies.",
-            "eligibility": "Based on academic merit and financial need.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.sunderland.ac.uk/study/fees-and-funding/scholarships/"
-        },
-        "University of Plymouth": {
-            "name": "Plymouth International Scholarships for Travel and Tourism",
-            "desc": "Support for international students in travel and tourism programs.",
-            "eligibility": "Available to students with strong academic records.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.plymouth.ac.uk/scholarships"
-        },
-        "University of Leeds": {
-            "name": "Leeds International Scholarships for Travel and Tourism",
-            "desc": "Scholarships for exceptional international students in travel and tourism programs.",
-            "eligibility": "Open to students with excellent academic achievements.",
-            "lvl_study": "Undergraduate",
-            "location": "United Kingdom",
-            "website": "https://www.leeds.ac.uk/scholarships/"
+            "website": "https://www.st-andrews.ac.uk/study/fees-and-funding/scholarships/scholarships-catalogue/postgraduate-scholarships/economic-and-social-research-council-studentship-funding/#:~:text=ESRC%20scholarships%20are%20awarded%20on,qualification%20at%20an%20equivalent%20level)."
         }
+    },
+    
+    "trav_tourism": {
     }
 }
 
