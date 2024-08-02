@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from django.urls import path, include, re_path
-
+from django.urls import path, include
+from django.views.decorators.cache import never_cache
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -33,8 +33,8 @@ urlpatterns = [
 
     path('password-change/', ChangePasswordView.as_view(), name='password_change'),
 
-    re_path(r'^oauth/', include('social_django.urls', namespace='social')),
+    path('oauth/', include('social_django.urls', namespace='social')),
 
-    
+    path('oauth/', never_cache(include('social_django.urls', namespace='social'))),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
