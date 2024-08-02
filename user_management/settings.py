@@ -179,7 +179,7 @@ LOGIN_URL = 'logout'
 
 # social auth configs for github
 SOCIAL_AUTH_GITHUB_KEY = 'Ov23lijuHQ57qEVin5lC'
-SOCIAL_AUTH_GITHUB_SECRET = str(os.getenv('GITHUB_SECRET'))
+SOCIAL_AUTH_GITHUB_SECRET = 'bf10fdfe427fadf81a225e5b5d9593eb4eea840f'
 SOCIAL_AUTH_GITHUB_REDIRECT_URI = 'http://127.0.0.1:8000/oauth/complete/github/'
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = False
 SOCIAL_AUTH_GITHUB_SCOPE = ['user:email']
