@@ -109,12 +109,12 @@ schol_type = {
             "website": "https://www.uea.ac.uk/study/fees-and-funding/scholarships/the-chadacre-trust-scholarship"
         },
         "University of Nottingham": {
-            "name": "Nottingham Trent University Agriculture Scholarship",
-            "desc": "Scholarships for international students in agriculture and related fields at Nottingham Trent University.",
+            "name": "The Gordon Rosen Undergraduate Research Scholarship",
+            "desc": "The scholarship is worth up to £2,500 and is for second-year students who wish to develop their research skills by undertaking a summer research project in the field of animal production (specifically poultry production). The successful applicant will be involved in a project for 8-10 weeks during the summer of 2024.",
             "eligibility": "Open to students demonstrating academic excellence and a commitment to agriculture, with an offer from Nottingham Trent University.",
             "lvl_study": "Undergraduate",
             "location": "United Kingdom",
-            "website": "https://www.ntu.ac.uk/study-and-courses/courses/our-schools/animal-rural-and-environmental-sciences"
+            "website": "https://www.ntu.ac.uk/study-and-courses/undergraduate/fees-and-funding/bursaries-and-scholarships/the-gordon-rosen-undergraduate-research-scholarship"
         },
     },
     "comp_math": {
@@ -235,14 +235,6 @@ schol_type = {
             "location": "United Kingdom",
             "website": "https://www.arts.ac.uk/study-at-ual/student-fees-and-funding/scholarships-search"
         },
-        "University of Brighton": {
-            "name": "International Scholarships for Art and Design",
-            "desc": "Funding for international students in art and design programs.",
-            "eligibility": "Open to international students demonstrating academic excellence.",
-            "lvl_study": "Undergraduate/Postgraduate",
-            "location": "United Kingdom",
-            "website": "https://www.brighton.ac.uk/international/scholarships/index.aspx"
-        }
     },
     "engin_tech": {
         "University of Bristol": {
@@ -259,7 +251,7 @@ schol_type = {
             "eligibility": "Outstanding academic achievement in engineering disciplines.",
             "lvl_study": "Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.southampton.ac.uk/scholarships/engineering-and-physical-sciences.page"
+            "website": "https://www.southampton.ac.uk/study/fees-funding/scholarships/engineering-deans-international"
         },
         "University of Leeds": {
             "name": "Faculty of Engineering International Scholarships",
@@ -485,16 +477,8 @@ schol_type = {
             "eligibility": "Available to high-achieving students with leadership potential.",
             "lvl_study": "Undergraduate/Postgraduate",
             "location": "United Kingdom",
-            "website": "https://www.gla.ac.uk/scholarships/international/"
+            "website": "https://www.gla.ac.uk/scholarships/universityofglasgowinternationalleadershipscholarship/"
         },
-        "University of Edinburgh": {
-            "name": "Edinburgh Global Undergraduate Maths Scholarships",
-            "desc": "Scholarships for undergraduate students in social sciences, including communications.",
-            "eligibility": "Open to international students demonstrating academic merit.",
-            "lvl_study": "Undergraduate",
-            "location": "United Kingdom",
-            "website": "https://www.ed.ac.uk/student-funding/undergraduate/international/global"
-        }
     },
     "trav_tourism": {
         "University of Brighton": {
