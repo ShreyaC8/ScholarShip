@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'euhbweid8e923bfuio8373890oeijijednieuhf394783sdzxdxr'
+SECRET_KEY = SECRET_KEY = str(os.getenv('euhbweid8e923bfuio8373890oeijijednieuhf394783sdzxdxr'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -179,16 +179,16 @@ LOGIN_URL = 'logout'
 
 
 # social auth configs for github
-SOCIAL_AUTH_GITHUB_KEY = 'Ov23lijuHQ57qEVin5lC'
-SOCIAL_AUTH_GITHUB_SECRET = 'bf10fdfe427fadf81a225e5b5d9593eb4eea840f'
+SOCIAL_AUTH_GITHUB_KEY = str(os.getenv('Ov23lijuHQ57qEVin5lC'))
+SOCIAL_AUTH_GITHUB_SECRET = str(os.getenv('bf10fdfe427fadf81a225e5b5d9593eb4eea840f'))
 SOCIAL_AUTH_GITHUB_REDIRECT_URI = 'http://127.0.0.1:8000/oauth/complete/github/'
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = False
 SOCIAL_AUTH_GITHUB_SCOPE = ['user:email']
 SOCIAL_AUTH_GITHUB_EXTRA_DATA = ['login', 'name', 'email']
 
 # social auth configs for google
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '406493699785-j2vk8u2i4784u9t3kaqs5mtpket63ka1.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = str(os.getenv('406493699785-j2vk8u2i4784u9t3kaqs5mtpket63ka1.apps.googleusercontent.com'))
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = str(os.getenv('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'))
 SOCIAL_AUTH_GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/oauth/complete/google-oauth2/'
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = False
 SOCIAL_AUTH_GOOGLE_SCOPE = ['user:email']
