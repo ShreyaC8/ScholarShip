@@ -21,5 +21,5 @@ $ python manage.py createsuperuser
 $ python manage.py runserver
 ```
    
-3. Open a browser and go to http://localhost:8000/
+3. Open a browser and go to http://localhost:8000/ (replace 'localhost' with your localhost ID)
 
