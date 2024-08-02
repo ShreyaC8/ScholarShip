@@ -1,6 +1,3 @@
-# Django-registration-and-login-system
-This web app has been developed using the popular Django framework and Bootstrap for the frontend. My motivation to build this project is so that I can learn about Django and tighten up my skills. This mini-app can be easily integrated into a bigger system project that needs to have a registration and login system.
-
 ### Basic Features of The App
     
 * Register – Users can register and create a new profile
@@ -11,11 +8,7 @@ This web app has been developed using the popular Django framework and Bootstrap
 * Remember me – Cookie Option, users don’t have to provide credentials every time they hit the site
 * Forgot Password – Users can easily retrieve their password if they forget it 
 * Admin Panel – admin can CRUD users
-
-![ScreenShot](https://user-images.githubusercontent.com/66206865/131695930-648342b0-010b-44b2-a419-15ad54d47869.png)
-
-## Tutorial
-[Here](https://dev.to/earthcomfy/series/14274) is a tutorial on how to build this project.
+* Categorised Scholarships - Users can swiftly find scholarships for their course of interest
 
 ### Quick Start
 To get this project up and running locally on your computer follow the following steps.
