@@ -186,7 +186,7 @@ SOCIAL_AUTH_GITHUB_SCOPE = ['user:email']
 SOCIAL_AUTH_GITHUB_EXTRA_DATA = ['login', 'name', 'email']
 
 # social auth configs for google
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = str(os.getenv('GOOGLE_KEY'))
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '406493699785-j2vk8u2i4784u9t3kaqs5mtpket63ka1.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = str(os.getenv('GOOGLE_SECRET'))
 SOCIAL_AUTH_GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/oauth/complete/google-oauth2/'
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = False
