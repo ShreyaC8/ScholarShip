@@ -37,31 +37,68 @@
             color: #28a745;
         }
     </style>
+    <style>
+        /* Custom style to set the background color */
+        body {
+            background-color: #AFAFDC; /* Light Pastel Purple */
+            color: #333; /* Set text color to dark for better contrast */
+        }
+        
+        .jumbotron {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for the jumbotron */
+            border-radius: 10px; /* Rounded corners for modern look */
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        
+        .card {
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 10px; /* Rounded corners for cards */
+            border: 1px solid #8484C4; /* Border with a slightly darker shade for contrast */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        }
+    
+        .card-body {
+            color: #333; /* Dark text color for readability inside cards */
+        }
+    
+        .btn-outline-primary {
+            color: #4A4A94; /* Adjusted button text color for better contrast */
+            border-color: #4A4A94; /* Button border color */
+        }
+    
+        .btn-outline-primary:hover {
+            background-color: #4A4A94;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-4">
-        <h1 class="text-center mb-4">Agriculture and Veterinary Scholarships</h1>
+    <div class="container mt-2">
+        <div class="jumbotron text-center bg-transparent p-10 rounded-lg shadow-sm">
+            <h1 class="text-center mb-4">Agriculture and Veterinary Scholarships</h1>
 
-        <div class="row">
-            {% for name, details in agri_vet_scholarships.items %}
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            {{ name }}
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text"><strong>Description:</strong> {{ details.desc }}</p>
-                            <p class="card-text"><strong>Eligibility:</strong> {{ details.eligibility }}</p>
-                            <p class="card-text"><strong>Level of Study:</strong> {{ details.lvl_study }}</p>
-                            <p class="card-text"><strong>Location:</strong> {{ details.location }}</p>
-                            <a href="{{ details.website }}" class="btn btn-primary" target="_blank">Learn More</a>
+            <div class="row">
+                {% for name, details in agri_vet_scholarships.items %}
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                {{ name }}
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><strong>Description:</strong> {{ details.desc }}</p>
+                                <p class="card-text"><strong>Eligibility:</strong> {{ details.eligibility }}</p>
+                                <p class="card-text"><strong>Level of Study:</strong> {{ details.lvl_study }}</p>
+                                <p class="card-text"><strong>Location:</strong> {{ details.location }}</p>
+                                <a href="{{ details.website }}" class="btn btn-primary" target="_blank">Learn More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endfor %}
-        </div>
+                {% endfor %}
+            </div>
 
-        <a href="/" class="btn btn-secondary mt-3">Back to Categories</a>
+            <a href="/" class="btn btn-secondary mt-3">Back to Categories</a>
+        </div>
     </div>
 </body>
 </html>
